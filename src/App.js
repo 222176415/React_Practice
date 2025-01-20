@@ -20,6 +20,7 @@ const initialFriends = [
     balance: 0,
   },
 ];
+const { id, name, image, balance } = initialFriends;
 
 export default function App(props) {
   return (
@@ -36,9 +37,20 @@ function FriendsList(props) {
       <div className="FriendsList">
         <ul>
           <li>
-            <Friend />
+            <Friend
+              image="https://i.pravatar.cc/48?u=118836"
+              name="Clark"
+              message="Random for now"
+            />
           </li>
-          <li></li>
+          <li>
+            {" "}
+            <Friend
+              image={initialFriends.image}
+              name={initialFriends.name}
+              message="Random for now"
+            />
+          </li>
           <li></li>
           <li></li>
         </ul>
