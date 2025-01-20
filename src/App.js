@@ -25,6 +25,35 @@ export default function App(props) {
   return (
     <div className="App">
       <p>Themba Ntimane </p>
+      <FriendsList />
+    </div>
+  );
+}
+
+function FriendsList(props) {
+  return (
+    <>
+      <div className="FriendsList">
+        <ul>
+          <li>
+            <Friend />
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </>
+  );
+}
+
+function Friend(props) {
+  return (
+    <div>
+      <img src={props.image} />
+      <h1>{props.name}</h1>
+      <p>{props.message}</p>
+      <button>Select</button>
     </div>
   );
 }

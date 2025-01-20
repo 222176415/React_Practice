@@ -10,6 +10,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+}
+.FriendsList {
+  border-color: #ff922b;
+  border-radius: 10px;
+}
 
 html {
   font-size: 62.5%;
